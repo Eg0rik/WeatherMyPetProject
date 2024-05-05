@@ -67,6 +67,8 @@ struct HomeView: View {
                 BackgroundView(query:forecastVM.cityCurrent.rawValue)
             }
             
+            Text("Сlick on the icon to view the description")
+            
             ForecastVerticalView(infoWeatherDayArray: forecastVM.forecastDaysAll)
                 .padding(.leading)
         }
